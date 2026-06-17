@@ -34,8 +34,7 @@ class Pierwiastki
     {
         switch (czyprawda)
         {
-            case false:
-                return;
+            
             case true:
                 delta = b * b - 4 * a * c;
                 switch (delta)
@@ -53,8 +52,8 @@ class Pierwiastki
                         else
                         {
                             Console.WriteLine("Wyliczam x1 i x2: ");
-                            x1 = -b - Math.Sqrt(delta) / (2 * a);
-                            x2 = -b + Math.Sqrt(delta) / (2 * a);
+                            x1 = (-b - Math.Sqrt(delta)) / (2 * a);
+                            x2 = (-b + Math.Sqrt(delta)) / (2 * a);
                         }
                         break;
 
@@ -69,8 +68,7 @@ class Pierwiastki
     {
         switch (czyprawda)
         {
-            case false:
-                return;
+            
             case true:
                 if (delta == 0 )
                 {
